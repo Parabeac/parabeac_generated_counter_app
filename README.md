@@ -12,7 +12,7 @@ Before trying to understand how this project works, be sure you are already awar
 
 https://www.figma.com/file/3XTVGUvPrA5VJTSiXlPVdk/Parabeac-Counter-App-Demo?node-id=0%3A1
 
-![Code Integration Concept](https://github.com/parabeac/parabeac-generated-counter-app/blob/main/code_integration_concept.jpeg?raw=true)
+![Code Integration Concept](https://github.com/parabeac/parabeac_generated_counter_app/blob/main/code_integration_concept.jpeg?raw=true)
 
 The main thing to understand with using Parabeac generated code is that static UI code should be owned by the designer, business logic and state management should be owned by the developer. Parabeac prints these out in .g files. However, Parabeac also generates non .g widget files when there should be one and it doesn't exist. This happens when a UI component should contain some functionality that is impossible to determine from an interpretation of a design file. To do this, in your design program you must label a UI group or element as <custom>. This generates the boilerplate needed to add functionality. Once this non .g file is generated or exists, it will never be re-generated from Parabeac.
 
