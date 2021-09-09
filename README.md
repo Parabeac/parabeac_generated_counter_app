@@ -16,7 +16,7 @@ https://www.figma.com/file/3XTVGUvPrA5VJTSiXlPVdk/Parabeac-Counter-App-Demo?node
 
 The main thing to understand with using Parabeac generated code is that static UI code should be owned by the designer, business logic and state management should be owned by the developer. Parabeac prints out .g files for the static UI code and sends changes to these files continously. Parabeac also generates non .g widget files but only one time and only for widgets that will contain business logic. To do this, in your design program you must label a UI group or element as `<custom>`. This generates the boilerplate needed to add functionality. Once this non .g file is generated or exists, it will never be re-generated from Parabeac.
 
-With this in mind, we need to seperate UI from business logic and state management which as much as possible, which is usually a good thing anyways. You'll often see your codebase follow the following pattern:
+With this in mind, we need to seperate UI from business logic and state management as much as possible (which is usually a good thing anyways). You'll often see your codebase follow the following pattern:
 
 ![Code Generation and creation 1](https://github.com/parabeac/parabeac_generated_counter_app/blob/main/code_generation_and_creation1.jpeg?raw=true)
 
