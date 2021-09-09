@@ -14,9 +14,17 @@ https://www.figma.com/file/3XTVGUvPrA5VJTSiXlPVdk/Parabeac-Counter-App-Demo?node
 
 ![Code Integration Concept](https://github.com/parabeac/parabeac_generated_counter_app/blob/main/code_integration_concept.jpeg?raw=true)
 
-The main thing to understand with using Parabeac generated code is that static UI code should be owned by the designer, business logic and state management should be owned by the developer. Parabeac prints these out in .g files. However, Parabeac also generates non .g widget files when there should be one and it doesn't exist. This happens when a UI component should contain some functionality that is impossible to determine from an interpretation of a design file. To do this, in your design program you must label a UI group or element as `<custom>`. This generates the boilerplate needed to add functionality. Once this non .g file is generated or exists, it will never be re-generated from Parabeac.
+The main thing to understand with using Parabeac generated code is that static UI code should be owned by the designer, business logic and state management should be owned by the developer. Parabeac prints out .g files for the static UI code and sends changes to these files continously. Parabeac also generates non .g widget files but only one time and only for widgets that will contain business logic. To do this, in your design program you must label a UI group or element as `<custom>`. This generates the boilerplate needed to add functionality. Once this non .g file is generated or exists, it will never be re-generated from Parabeac.
 
-Let's take a look at this project example. In this project you will find the following files that were gerenated from Parabeac-Core.
+With this in mind, we need to seperate UI from business logic and state management which as much as possible, which is usually a good thing anyways. You'll often see your codebase follow the following pattern:
+
+![Code Generation and creation 1](https://github.com/parabeac/parabeac_generated_counter_app/blob/main/code_generation_and_creation1.jpeg?raw=true)
+
+If you need to create some value, or "App State" that a clicked button will modify. You can do that by wrapping the generated UI in a provider. In the provider you can create the value that the button can then access. By labeling the button as `<custom>` in the design file, we have generated boilerplate for us to write code as a developer to communicate with the provider. In this project, you can see this pattern broken down in the following image:
+
+![Code Generation and creation 2](https://github.com/parabeac/parabeac_generated_counter_app/blob/main/code_generation_and_creation2.jpeg?raw=true)
+
+For a deeper look, let's look at the specifics in this project example. In this project you will find the following files that were gerenated from Parabeac-Core.
 ### .g files
 * my_app_screen.g.dart
 * counter_value_text.g.dart
