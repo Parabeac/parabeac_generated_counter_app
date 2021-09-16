@@ -145,4 +145,6 @@ Widget build(BuildContext context) {
   }
 ```
 ### When the UI can't be automatically interpreted & generated
-There comes a time when what Parabeac generates will just never be remotely close to what needs to be created. Describing an element as `<custom>` solves this by enabling the designer to write whatever they'd like. (Stick in astronaut meme here in the actual app)
+There comes a time when what Parabeac generates will just never be remotely close to what needs to be created. Describing an element as `<custom>` solves this by enabling the designer to write whatever they'd like.
+
+![PB Astronaut Meme](https://github.com/parabeac/parabeac_generated_counter_app/blob/main/pb_astronaut_meme.jpg?raw=true)
