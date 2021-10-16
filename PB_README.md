@@ -7,7 +7,7 @@ Parabeac is a design to development tool aimed to continuously integrate design 
 3. Dynamic UI elements need to be tagged (`<custom>`)
 
 ### Parabeac genereates static UI code (.g)
-For UI elements that are screens or components, Parabeac generates `*.g.dart` files. These are intended for the designer to own without any developer modiciation. This might sound scary, but it's actually super useful because it enables the developer to focus on more important things than managing the UI.
+For UI elements that are screens or components, Parabeac generates `*.g.dart` files. These are intended for the designer to own without any developer modification. This might sound scary, but it's actually super useful because it enables the developer to focus on more important things than managing the UI.
 
 ### Providers wrap UI code (bloc, provider, riverpod)
 As previously mentioned, because we can't touch the static UI code, we can't add state values or logic in those files directly. But we can wrap the static widget in a provider, which enables the children to access the state data. You may be wondering, "why would we do this if the children UI is static and can't be modified by the developer.". This goes hand in hand with the next rule, where we enable some UI elements to be controlled by the developer, thus being able to interact with this state data.
