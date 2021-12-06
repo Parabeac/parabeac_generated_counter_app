@@ -10,7 +10,7 @@ Before trying to understand how this project works, be sure you are already awar
 * [Figma](https://www.figma.com)
 * [Parabeac-Core](https://github.com/Parabeac/Parabeac-Core)
 
-https://www.figma.com/file/3XTVGUvPrA5VJTSiXlPVdk/Parabeac-Counter-App-Demo?node-id=0%3A1
+https://www.figma.com/file/Ysnjcij14HaE98ucq1iwW1/Parabeac-Counter-App-Demo?node-id=0%3A1
 
 ![Code Integration Concept](https://github.com/parabeac/parabeac_generated_counter_app/blob/main/code_integration_concept.jpeg?raw=true)
 
