@@ -89,7 +89,7 @@ Widget build(BuildContext context) {
 Now children of MyAppScreen can all reference `FooCubit`.
 
 ### How to reference state & logic on specific widgets
-Now that we know that children of MyAppScreen can reference `FooCubit` we can now access it's values. But we need a place to write code, so go back to your design file & add `<custom>` to a UI element and regenerate the code. (Or feel free to update your figma file with this one: [TODO](https://parabeac.com) ) You will end up with a boilerplate file with a Stateful widget. In here you will see the following as the starting code in the build function:
+Now that we know that children of MyAppScreen can reference `FooCubit` we can now access it's values. But we need a place to write code, so go back to your design file & add `<custom>` to a UI element and regenerate the code. You will end up with a boilerplate file with a Stateful widget. In here you will see the following as the starting code in the build function:
 ```
 Widget build(BuildContext context) {
     return widget.child;
