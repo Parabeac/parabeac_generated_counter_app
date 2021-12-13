@@ -104,7 +104,7 @@ Widget build(BuildContext context) {
     return widget.child;
   }
 ```
-
+<!-- 
 ### How to leverage views (Components/Symbols)
 In most design programs, you can describe components as reusable design elements. Parabeac interprets these and creates .g files similar to how Parabeac treats screens. If available, you can even override properties of these views through the constructor parameters. Try the following design file, [Some Screen That should have a scroll view](google.com) clearly this screen should have a scroll view but Parabeac has no way to describe this. We should do two things here, create a frame that wraps all of the reusable items, and make sure that all the cells in them are reusable. In our custom widget, we can now create a scroll view like below:
 ```
@@ -143,7 +143,7 @@ Widget build(BuildContext context) {
         ],
       );
   }
-```
+``` -->
 ### When the UI can't be automatically interpreted & generated
 There comes a time when what Parabeac generates will just never be remotely close to what needs to be created. Describing an element as `<custom>` solves this by enabling the developer to write whatever they'd like.
 
