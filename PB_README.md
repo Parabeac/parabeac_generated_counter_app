@@ -23,7 +23,7 @@ A good example project based on the Flutter counter app can be found [here](http
 * When the UI can't be automatically interpreted & generated
 
 ### How to wrap screens and views with state & business logic
-The easiest way for us to start is to visit the main.dart file and have one screen created already. Take any generated screen you have (or feel free to use our Hello World example [hereTODO](https://parabeac.com)) and reference it in the main.dart file like the following:
+The easiest way for us to start is to visit the main.dart file and have one screen created already. Take any generated screen you have and reference it in the main.dart file like the following:
 ```
 Widget build(BuildContext context) {
     return MaterialApp(
