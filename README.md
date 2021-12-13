@@ -1,6 +1,6 @@
 # Parabeac Counter App
 
-This repo is designed to show how to make the sample Flutter Counter App with code generation from [Parabeac-Core](https://github.com/Parabeac/Parabeac-Core).
+This repo is designed to show how to the sample Flutter Counter App works with code generation from [Parabeac-Core](https://github.com/Parabeac/Parabeac-Core). You can go through the hello world guide [here](https://docs.parabeac.com/docs/hello-world-guide).
 
 ## Getting Started
 
